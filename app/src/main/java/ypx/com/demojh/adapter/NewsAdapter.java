@@ -51,6 +51,8 @@ public class NewsAdapter extends BaseAdapter {
         }else {
             holder= (ViewHolder) converView.getTag();
         }
+
+
         //加载网络图片
         Glide.with(parent.getContext())
                 .load(data.get(positon).getThumbnail_pic_s())
